@@ -1,0 +1,790 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anil Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <header class="topbar">
+    <nav class="nav">
+      <a class="brand" href="#home">
+        <span class="brandMark">AN</span>
+        <span class="brandText">IL.ENGINEER</span>
+      </a>
+
+      <div class="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="btn btn-outline" href="#" download>Download CV</a>
+
+      <button class="hamburger" aria-label="Open menu" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobileMenu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-outline mobileCta" href="#" download>Download CV</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="heroLeft">
+        <div class="pill">
+          <span class="pillIcon">👋</span>
+          <span>WELCOME TO MY PORTFOLIO</span>
+        </div>
+
+        <h1 class="title">
+          <span class="titleLine1">Anil</span>
+          <span class="titleLine2">Tyata</span>
+        </h1>
+
+        <p class="subtitle">
+          Student of Cloud Computing & Electronics Engineer. Specialized in building scalable data
+          pipelines and robust cloud infrastructure. 🚀
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn btn-primary" href="#contact">
+            Get in Touch
+            <span class="arrow">›</span>
+          </a>
+          <a class="btn btn-glass" href="#" download>
+            Download CV
+            <span class="dlIcon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 11l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="socialRow" aria-label="Social links">
+          <a class="social" href="#" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6.5 6.5h0.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M10.5 18v-4.5c0-1.7 1.3-3 3-3s3 1.3 3 3V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10.5 11v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+
+          <a class="social" href="#" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M9 19c-4 1.2-4-2-5-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 19v-3c0-.9.3-1.6.8-2.1 2.7-.3 5.5-1.3 5.5-6.2 0-1.4-.5-2.5-1.3-3.4.1-.3.6-1.7-.1-3.4 0 0-1-.3-3.4 1.3a11.7 11.7 0 0 0-6.1 0C8 0.6 7 0.9 7 0.9c-.7 1.7-.2 3.1-.1 3.4-.8.9-1.3 2-1.3 3.4 0 4.9 2.8 5.9 5.5 6.2.5.5.8 1.2.8 2.1v3"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
+          <a class="social" href="#contact" aria-label="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="heroRight">
+        <div class="orb">
+          <div class="rings"></div>
+
+          <div class="photoWrap">
+            <img src="assets/profile.jpeg" alt="Profile photo" />
+          </div>
+
+          <div class="tag tag-cloud">
+            <span class="tagIcon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M7.5 18h9.2a4 4 0 0 0 .5-8 5.5 5.5 0 0 0-10.7 1.7A3.6 3.6 0 0 0 7.5 18z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Cloud Engineer</span>
+          </div>
+
+          <div class="tag tag-network">
+            <span class="tagIcon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 7c4 4 6 6 10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M17 7c-4 4-6 6-10 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>Network Engineer</span>
+          </div>
+
+          <div class="tag tag-devops">
+            <span class="tagIcon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M8 15l-3-3 3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 9l3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 19l4-14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>DevOps Engineer</span>
+          </div>
+
+          <div class="tag tag-data">
+            <span class="tagIcon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 19V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 19V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M22 19V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>Data Engineer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ONE scroll indicator only -->
+      <div class="scrollHint">
+        <div class="scrollText">SCROLL</div>
+        <div class="scrollLine"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about aboutOffset" id="about">
+      <div class="aboutGrid">
+        <div class="aboutImageCard">
+          <img src="assets/about.jpg" alt="Cloud Infrastructure" />
+          <div class="aboutImageOverlay"></div>
+        </div>
+
+        <div class="aboutContent">
+          <div class="aboutTop">
+            <span class="aboutIcon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 12a4 4 0 1 0-0.001-8.001A4 4 0 0 0 12 12Z"
+                  stroke="currentColor" stroke-width="2"/>
+                <path d="M4 20c1.7-4.2 5-6 8-6s6.3 1.8 8 6"
+                  stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+            <span class="aboutLabel">ABOUT ME</span>
+            <span class="aboutEmoji">🙇</span>
+          </div>
+
+          <h2 class="aboutTitle">
+            <span>Crafting Digital</span>
+            <span class="aboutAccent">Infrastructures</span>
+          </h2>
+
+          <p class="aboutText">
+            I am a multidisciplinary engineer currently pursuing postgraduate studies in Cloud Computing.
+            With a background in Electronics and Communications Engineering, I bridge the gap between
+            hardware architecture and high-level cloud ecosystems.
+          </p>
+
+          <div class="aboutCards">
+            <div class="aboutMiniCard">
+              <div class="miniIcon">&lt;/&gt;</div>
+              <h3>Development</h3>
+              <p>Python, SQL, and Shell scripting for automation and data analysis.</p>
+            </div>
+
+            <div class="aboutMiniCard">
+              <div class="miniIcon">▦</div>
+              <h3>Engineering</h3>
+              <p>Network administration and electronics systems expertise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="skillsHead">
+        <h2 class="skillsTitle">
+          <span>Technical</span>
+          <span class="skillsAccent">Competencies</span>
+        </h2>
+        <p class="skillsSub">
+          A diverse toolkit built on years of networking experience and advanced cloud studies.
+        </p>
+      </div>
+
+      <div class="skillsGrid">
+        <article class="skillCard">
+          <div class="skillIcon ic-cloud" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M7.5 18h9.2a4 4 0 0 0 .5-8 5.5 5.5 0 0 0-10.7 1.7A3.6 3.6 0 0 0 7.5 18z"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Cloud Platforms</h3>
+          <div class="pillRow">
+            <span class="chip">AWS (EC2, VPC, IAM, S3)</span>
+            <span class="chip">Azure Fundamentals</span>
+            <span class="chip">Google Cloud Platform</span>
+          </div>
+        </article>
+
+        <article class="skillCard">
+          <div class="skillIcon ic-devops" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 7v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 14v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M7 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 12h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 4.5c4.1 0 7.5 3.4 7.5 7.5S16.1 19.5 12 19.5 4.5 16.1 4.5 12 7.9 4.5 12 4.5Z"
+                stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>DevOps & Tools</h3>
+          <div class="pillRow">
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">Git & GitLab CI/CD</span>
+            <span class="chip">Terraform</span>
+            <span class="chip">Ansible</span>
+            <span class="chip">ArgoCD</span>
+          </div>
+        </article>
+
+        <article class="skillCard">
+          <div class="skillIcon ic-net" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 15v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8.2 8.2c2.8 2.8 4.8 4.8 7.6 7.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15.8 8.2c-2.8 2.8-4.8 4.8-7.6 7.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Networking</h3>
+          <div class="pillRow">
+            <span class="chip">FTTH / GPON</span>
+            <span class="chip">OLT Configuration (Nokia)</span>
+            <span class="chip">Routing & Switching (Cisco, Juniper)</span>
+            <span class="chip">NAGIOS & MRTG</span>
+          </div>
+        </article>
+
+        <article class="skillCard">
+          <div class="skillIcon ic-dataeng" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M7 7c0 1.7 2.2 3 5 3s5-1.3 5-3-2.2-3-5-3-5 1.3-5 3Z"
+                stroke="currentColor" stroke-width="2"/>
+              <path d="M7 7v10c0 1.7 2.2 3 5 3s5-1.3 5-3V7"
+                stroke="currentColor" stroke-width="2"/>
+              <path d="M7 12c0 1.7 2.2 3 5 3s5-1.3 5-3"
+                stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Data Engineering</h3>
+          <div class="pillRow">
+            <span class="chip">Apache Spark</span>
+            <span class="chip">DBT</span>
+            <span class="chip">ETL Pipelines</span>
+            <span class="chip">Data Warehousing</span>
+            <span class="chip">Web Scraping</span>
+          </div>
+        </article>
+
+        <article class="skillCard">
+          <div class="skillIcon ic-analytics" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M6 19V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 19v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Data Analytics</h3>
+          <div class="pillRow">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Exploratory Data Analysis</span>
+            <span class="chip">Data Visualization</span>
+          </div>
+        </article>
+
+        <article class="skillCard">
+          <div class="skillIcon ic-script" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M8 15l-3-3 3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 9l3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 19l4-14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Scripting & Languages</h3>
+          <div class="pillRow">
+            <span class="chip">Python</span>
+            <span class="chip">Bash</span>
+            <span class="chip">PowerShell</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Big Data Analysis</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="projHead">
+        <div class="projHeadLeft">
+          <div class="projIcon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l8 4.5-8 4.5-8-4.5L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 12l8 4.5 8-4.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 16.5l8 4.5 8-4.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2 class="projTitle">FEATURED PROJECTS</h2>
+        </div>
+      </div>
+
+      <div class="projGrid">
+        <article class="projCard">
+          <div class="projImg">
+            <img src="assets/proj1.png" alt="Kubernetes CI/CD Pipeline" />
+          </div>
+
+          <div class="projBody">
+            <div class="projTags">
+              <span class="pTag">GitLab</span>
+              <span class="pTag">ArgoCD</span>
+              <span class="pTag">Docker</span>
+              <span class="pTag">K8s</span>
+            </div>
+
+            <h3 class="projName">Kubernetes CI/CD Pipeline</h3>
+
+            <p class="projDesc">
+              Automated deployment of containerized applications to Kubernetes using GitLab CI/CD and ArgoCD.
+              Implemented push-based deployment strategies.
+            </p>
+
+            <div class="projLinks">
+              <a class="projLink" href="https://github.com/anilty78/flask-argocd-deploy" target="_blank" rel="noreferrer">View Repo</a>
+              <a class="projLink" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projCard">
+          <div class="projImg">
+            <img src="assets/proj2.png" alt="Cloud Infrastructure Setup" />
+          </div>
+
+          <div class="projBody">
+            <div class="projTags">
+              <span class="pTag">AWS</span>
+              <span class="pTag">VPC</span>
+              <span class="pTag">EC2</span>
+              <span class="pTag">S3</span>
+            </div>
+
+            <h3 class="projName">Cloud Infrastructure Setup</h3>
+
+            <p class="projDesc">
+              Architecture setup on AWS with EC2, RDS, and S3. Implemented VPC peering and security groups for
+              high availability.
+            </p>
+
+            <div class="projLinks">
+              <a class="projLink" href="#" target="_blank" rel="noreferrer">Case Study</a>
+              <a class="projLink" href="#" target="_blank" rel="noreferrer">Diagram</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="projCard">
+          <div class="projImg">
+            <img src="assets/proj3.png" alt="Network Automation" />
+          </div>
+
+          <div class="projBody">
+            <div class="projTags">
+              <span class="pTag">Python</span>
+              <span class="pTag">Ansible</span>
+              <span class="pTag">Automation</span>
+            </div>
+
+            <h3 class="projName">Network Automation</h3>
+
+            <p class="projDesc">
+              Implemented automated network configuration using Python scripts and Ansible for Nokia and Cisco devices.
+            </p>
+
+            <div class="projLinks">
+              <a class="projLink" href="#" target="_blank" rel="noreferrer">View Repo</a>
+              <a class="projLink" href="#" target="_blank" rel="noreferrer">Write-up</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="exp" id="experience">
+      <div class="expHead">
+        <h2 class="expTitle">Professional Journey</h2>
+        <div class="expUnderline"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="tlLine"></div>
+
+        <!-- 1. Data Analyst | RIGHT -->
+        <article class="tlItem right">
+          <div class="tlDot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M6 19V9" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 19V5" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 19v-7" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="tlCard">
+            <div class="tlTop">
+              <h3 class="tlRole">Data Analyst/DevOps Engineer</h3>
+              <span class="tlDate">January 2025 – Present</span>
+            </div>
+
+            <div class="tlMeta">
+              <span class="tlCompany">Dlytica Inc.</span>
+              <span class="tlSep">•</span>
+              <span class="tlLoc">Canada</span>
+            </div>
+
+            <p class="tlSummary">
+              Multidisciplinary role combining data analytics, engineering, and DevOps.
+            </p>
+
+            <ul class="tlBullets">
+              <li>Conducted data cleaning and exploratory analysis using Python, SQL, and Power BI</li>
+              <li>Built interactive dashboards to support business decision making</li>
+              <li>Designed end-to-end data pipelines using Apache Spark and DBT</li>
+              <li>Contributed to CI/CD pipelines using GitLab</li>
+              <li>Deployed containerized workloads on Kubernetes using Helm and ArgoCD</li>
+            </ul>
+
+            <div class="tlTags">
+              <span class="tChip">Python</span>
+              <span class="tChip">SQL</span>
+              <span class="tChip">Power BI</span>
+              <span class="tChip">Spark</span>
+              <span class="tChip">Kubernetes</span>
+              <span class="tChip">ArgoCD</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Senior Network Administrator | LEFT -->
+        <article class="tlItem left">
+          <div class="tlDot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M7 7c0 1.7 2.2 3 5 3s5-1.3 5-3" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 7v10c0 1.7 2.2 3 5 3s5-1.3 5-3V7" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="tlCard">
+            <div class="tlTop">
+              <h3 class="tlRole">Senior Network Administrator</h3>
+              <span class="tlDate">February 2023 – April 2025</span>
+            </div>
+
+            <div class="tlMeta">
+              <span class="tlCompany">WorldLink Communications</span>
+              <span class="tlSep">•</span>
+              <span class="tlLoc">Jawalakhel, Nepal</span>
+            </div>
+
+            <p class="tlSummary">
+              Led large-scale ISP network operations with a focus on uptime, stability, and service quality.
+            </p>
+
+            <ul class="tlBullets">
+              <li>Managed enterprise and retail ISP infrastructure with 99.9% uptime</li>
+              <li>Coordinated with NOC teams to resolve FTTH network incidents</li>
+              <li>Configured and maintained Nokia OLTs, Cisco, and Juniper devices</li>
+              <li>Monitored performance using NAGIOS and minimized service downtime</li>
+              <li>Trained and supervised multi-tier technical support teams</li>
+            </ul>
+
+            <div class="tlTags">
+              <span class="tChip">Cisco</span>
+              <span class="tChip">Juniper</span>
+              <span class="tChip">FTTH / GPON</span>
+              <span class="tChip">Nokia OLT</span>
+              <span class="tChip">NAGIOS</span>
+              <span class="tChip">Leadership</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Regional Technical Supervisor | RIGHT -->
+        <article class="tlItem right">
+          <div class="tlDot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3v6" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 15v6" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 12h12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="tlCard">
+            <div class="tlTop">
+              <h3 class="tlRole">Regional Technical Supervisor</h3>
+              <span class="tlDate">July 2021 – February 2023</span>
+            </div>
+
+            <div class="tlMeta">
+              <span class="tlCompany">WorldLink Communications Ltd.</span>
+              <span class="tlSep">•</span>
+              <span class="tlLoc">Pokhara, Nepal</span>
+            </div>
+
+            <p class="tlSummary">
+              Oversaw technical operations and team performance across multiple branch locations.
+            </p>
+
+            <ul class="tlBullets">
+              <li>Supervised and evaluated field technical teams</li>
+              <li>Prepared performance and KPI reports for management</li>
+              <li>Optimized fiber and core management strategies</li>
+            </ul>
+
+            <div class="tlTags">
+              <span class="tChip">Team Leadership</span>
+              <span class="tChip">Operations</span>
+              <span class="tChip">KPI Reporting</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Technical Support Representative | LEFT -->
+        <article class="tlItem left">
+          <div class="tlDot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 12h10" stroke="currentColor" stroke-width="2"/>
+              <path d="M4 17h16" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="tlCard">
+            <div class="tlTop">
+              <h3 class="tlRole">Technical Support Representative</h3>
+              <span class="tlDate">January 2020 – July 2021</span>
+            </div>
+
+            <div class="tlMeta">
+              <span class="tlCompany">WorldLink Communications Ltd.</span>
+              <span class="tlSep">•</span>
+              <span class="tlLoc">Lalitpur, Nepal</span>
+            </div>
+
+            <p class="tlSummary">
+              Provided frontline technical support and ensured customer connectivity.
+            </p>
+
+            <ul class="tlBullets">
+              <li>Delivered remote troubleshooting for customer network issues</li>
+              <li>Configured VLANs and monitored traffic using MRTG</li>
+              <li>Resolved connectivity issues within SLA timelines</li>
+            </ul>
+
+            <div class="tlTags">
+              <span class="tChip">VLAN</span>
+              <span class="tChip">MRTG</span>
+              <span class="tChip">Troubleshooting</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="edu" id="education">
+      <div class="eduHead">
+        <h2 class="eduTitle">
+          <span>Education</span>
+          <span class="eduAccent">& Learning</span>
+        </h2>
+      </div>
+
+      <div class="eduList">
+        <article class="eduCard">
+          <div class="eduIcon blue">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M3 7l9-4 9 4-9 4-9-4Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 10v5c0 2 7 5 7 5s7-3 7-5v-5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="eduBody">
+            <h3>Postgraduate Degree, Cloud Computing</h3>
+            <p class="eduSchool">Cambrian at Hanson College</p>
+            <span class="eduDate">Jan 2024 – April 2025</span>
+            <p class="eduDesc">Specialized in cloud architecture, deployment strategies, and distributed systems.</p>
+          </div>
+        </article>
+
+        <article class="eduCard">
+          <div class="eduIcon purple">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M3 7l9-4 9 4-9 4-9-4Z" stroke="currentColor" stroke-width="2"/>
+              <path d="M5 10v5c0 2 7 5 7 5s7-3 7-5v-5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <div class="eduBody">
+            <h3>Bachelor’s Degree, Electronics and Communications Engineering</h3>
+            <p class="eduSchool">Khwopa Engineering College</p>
+            <span class="eduDate">Oct 2014 – June 2018</span>
+            <p class="eduDesc">Foundation in electronics, telecommunications networks, and signal processing.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contactHead">
+        <h2 class="contactTitle">
+          <span>Get In</span>
+          <span class="contactAccent">Touch</span>
+        </h2>
+        <p class="contactSub">Interested in collaboration or have an opportunity. Let’s connect.</p>
+      </div>
+
+      <div class="contactGrid">
+        <div class="contactLeft">
+
+          <div class="infoCard">
+            <div class="infoIcon teal" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 20 20 0 0 1-8.7-3.1 19.6 19.6 0 0 1-6-6A20 20 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c1 .3 2 .6 3 .7a2 2 0 0 1 1.7 1.9Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="infoBody">
+              <div class="infoLabel">PHONE</div>
+              <div class="infoValue"><a href="tel:4374499078">437-449-9078</a></div>
+            </div>
+          </div>
+
+          <div class="infoCard">
+            <div class="infoIcon blue" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="infoBody">
+              <div class="infoLabel">EMAIL</div>
+              <div class="infoValue"><a href="mailto:tyata.anil@gmail.com">tyata.anil@gmail.com</a></div>
+            </div>
+          </div>
+
+          <div class="infoCard">
+            <div class="infoIcon purple" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6.5 6.5h0.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M10.5 18v-4.5c0-1.7 1.3-3 3-3s3 1.3 3 3V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10.5 11v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="infoBody">
+              <div class="infoLabel">LINKEDIN</div>
+              <div class="infoValue">
+                <a href="https://linkedin.com/in/anilty78" target="_blank" rel="noreferrer">linkedin.com/in/anilty78</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="infoCard">
+            <div class="infoIcon gray" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21s7-4.4 7-11a7 7 0 0 0-14 0c0 6.6 7 11 7 11Z"
+                  stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 10.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                  stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="infoBody">
+              <div class="infoLabel">LOCATION</div>
+              <div class="infoValue">Toronto, Canada</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contactRight">
+          <form class="msgCard" id="contactForm">
+            <h3 class="msgTitle">Send a Message</h3>
+
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="John Doe" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="john@example.com" required />
+            </label>
+
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="7" placeholder="Your message..." required></textarea>
+            </label>
+
+            <button class="msgBtn" type="submit">
+              Send Message
+              <span class="msgBtnIcon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M22 2 11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M22 2 15 22l-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+
+            <p class="msgNote" id="formNote">This form opens your email app.</p>
+          </form>
+        </div>
+      </div>
+
+      <footer class="siteFooter">© Copyright Anil Tyata All Rights Reserved</footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
